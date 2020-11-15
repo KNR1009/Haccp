@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+  <meta content="Coderthemes" name="author" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- App favicon -->
+ <link rel="shortcut icon" href="./common/img/haccp/serius_logo_small.svg">
+
+  <!-- plugin css -->
+  <link href="./assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet"
+    type="text/css" />
+
+  <!-- App css -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+  <link href="./assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+
+  <link href="./assets/css/bootstrap-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" />
+  <link href="./assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" />
+
+  <!-- icons -->
+  <link href="./assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- common -->
+  <link rel="stylesheet" href="./common/css/customer-style.css">
+  <!-- <link rel="stylesheet" href="./common/css/serius-style.css"> -->
+
+
+</head>
+
+<body class="loading">
+
+  <!-- Begin page -->
+  <div id="wrapper">
+
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="left-side-menu">
+
+      <!-- LOGO -->
+        <div class="logo-box">
+          <a href="index.html" class="logo logo-dark text-center">
+            <span class="logo-sm">
+              <img src="./common/img/haccp/serius_logo_small.svg" alt="" height="24">
+              <!-- <span class="logo-lg-text-light">Minton</span> -->
+            </span>
+        
+          </a>
+        
+          <a href="index.html" class="logo logo-light">
+            <span class="logo-sm">
+              <img src="./common/img/haccp/serius_logo_small.svg" alt="" height="30">
+            </span>
+        
+            <span class="logo-lg">
+              <img src="./common/img/haccp/serius_logo_large.svg" alt="" height="45" class="ml-3">
+            </span>
+          </a>
+        </div>
+
+      <div class="h-100" data-simplebar>
+
+        <!-- User box -->
+        <div class="user-box text-center">
+          <img src="./assets/images/users/avatar-1.jpg" alt="user-img" title="Mat Helme"
+            class="rounded-circle avatar-md">
+          <div class="dropdown">
+            <a href="javascript: void(0);" class="text-reset dropdown-toggle h5 mt-2 mb-1 d-block"
+              data-toggle="dropdown">Nik Patel</a>
+            <div class="dropdown-menu user-pro-dropdown">
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="fe-user mr-1"></i>
+                <span>My Account</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="fe-settings mr-1"></i>
+                <span>Settings</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="fe-lock mr-1"></i>
+                <span>Lock Screen</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="fe-log-out mr-1"></i>
+                <span>Logout</span>
+              </a>
+
+            </div>
+          </div>
+          <p class="text-reset">Admin Head</p>
+        </div>
+
+        <!--- Sidemenu -->
+        <!-- サイドメニュー -->
+        <div id="sidebar-menu">
+
+      <ul id="side-menu">
+      
+      
+      
+      
+        <li>
+          <a href="#sidebarLayouts" data-toggle="collapse">
+            <!--                                    <i class="ri-layout-line"></i>-->
+            <img src="./assets/images/icons/kanri-icon.svg" style="width:15px;margin-left:3px;margin-right:12px;">
+            <span> 管理 </span>
+            <span class="menu-arrow"></span>
+          </a>
+          <div class="collapse" id="sidebarLayouts">
+            <ul class="nav-second-level">
+              <li>
+                <a href="500.html">社員管理</a>
+              </li>
+              <li>
+                <a href="600.html">素材追加リクエスト</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      
+      
+        <li>
+          <a href="#sidebarEmail" data-toggle="collapse">
+            <img src="./assets/images/icons/info-icon.svg" style="width:14px;margin-left:3px;margin-right:14px;">
+            <span> 企業情報 </span>
+          </a>
+      
+        </li>
+      
+        <li>
+          <a href="#sidebarTasks" data-toggle="collapse">
+            <img src="./assets/images/icons/kitei-icon.svg" style="width:15px;margin-left:3px;margin-right:14px;">
+            <span> HACCP規定 </span>
+            <span class="menu-arrow"></span>
+          </a>
+          <div class="collapse" id="sidebarTasks">
+            <ul class="nav-second-level">
+              <li>
+                <a href="800.html">導入手順</a>
+              </li>
+              <li>
+                <a href="900.html">手順1:チームを作ろう</a>
+              </li>
+              <li>
+                <a href="1000.html">手順2:製品説明図を作ろう<br>手順3:用途、対象者を確認しよう</a>
+              </li>
+              <li>
+                <a href="1100.html">手順4:製造工程図を作ろう</a>
+              </li>
+              <li>
+                <a href="1200.html">手順5:製造工程図を現場で確認しよう</a>
+              </li>
+              <li>
+                <a
+                  href="1300.html">手順６【原則1】：危害要因の分析に挑戦<br>手順７【原則2】：重要管理点（CCP）をみつける<br>手順８【原則3】：管理基準（CL）の設定<br>手順９【原則4】：モニタリング方法の設定</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      
+      
+        <li>
+          <a href="#sidebarAuth" data-toggle="collapse">
+            <img src="./assets/images/icons/kiroku-icon.svg" style="width:20px;margin-left:3px;margin-right:11px;">
+            <span> HACCP記録 </span>
+            <span class="menu-arrow"></span>
+          </a>
+
+      
+
+          <div class="collapse" id="sidebarAuth">
+            <ul class="nav-second-level">
+              <li>
+                <a href="1400.html">手順１０【原則5】：不具合があった時には「改善措置」</a>
+              </li>
+              <li>
+                <a href="1500.html">手順１１【原則6】：定期的に見直す「検証」</a>
+              </li>
+              <li>
+                <a href="1600.html">手順１２【原則7】：記録の文書化と保管</a>
+              </li>
+              <li>
+                <a href="1700.html">より良くするために〜検証とは〜</a>
+              </li>
+      
+            </ul>
+          </div>
+        </li>
+      
+          <li>
+            <a href="#sidebarEmail" data-toggle="collapse">
+              <img src="./assets/images/icons/info-icon.svg" style="width:14px;margin-left:3px;margin-right:14px;">
+              <span> 5Sダウンロード </span>
+            </a>
+          
+          </li>
+      </ul>
+
+        </div>
+        <!-- サイドメニュー終了 -->
+        <!-- End Sidebar -->
+
+        <div class="clearfix"></div>
+
+      </div>
+      <!-- Sidebar -left -->
+
+    </div>
+    <!-- Left Sidebar End -->
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="content-page">
+      <div class="content">
+
+      <!-- Topbar Start -->
+      <div class="navbar-custom">
+        <div class="container-fluid">
+      
+          <ul class="list-unstyled topnav-menu float-right mb-0">
+            <li class="notification-list mr-2" style="height:70px;">
+              <div style="margin-top:25px;">
+                <p style="color:white">＃＃＃＃様</p>
+              </div>
+            </li>
+            <li class="dropdown notification-list">
+              <a href="">
+                <button class="btn btn-secondary" style="margin-top:17px" ;>ログアウト</button>
+              </a>
+            </li>
+          </ul>
+      
+      
+          <!-- LOGO -->
+          <div class="logo-box">
+            <a href="index.html" class="logo logo-dark text-center">
+              <span class="logo-sm">
+                <img src="./assets/images/logo-sm-dark.png" alt="" height="24">
+                <!-- <span class="logo-lg-text-light">Minton</span> -->
+              </span>
+              <span class="logo-lg">
+                <img src="./assets/images/logo-dark.png" alt="" height="20">
+                <!-- <span class="logo-lg-text-light">M</span> -->
+              </span>
+            </a>
+      
+            <a href="index.html" class="logo logo-light text-center">
+              <span class="logo-sm">
+                <img src="./assets/images/logo-sm.png" alt="" height="24">
+              </span>
+              <span class="logo-lg">
+                <img src="./assets/images/logo-light.png" alt="" height="20">
+              </span>
+            </a>
+          </div>
+      
+          <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+            <li>
+              <button class="button-menu-mobile waves-effect waves-light">
+                <i class="fe-menu"></i>
+              </button>
+            </li>
+            <li>
+              <div class="text-white my-sm-3 company-name">
+                <span>株式会社aa<br class="company-name-br">bb事業所</span>
+              </div>
+            </li>
+      
+            <li>
+              <!-- Mobile menu toggle (Horizontal Layout)-->
+              <a class="navbar-toggle nav-link" data-toggle="collapse" data-target="#topnav-menu-content">
+                <div class="lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+              <!-- End mobile menu toggle-->
+            </li>
+      
+      
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <!-- end Topbar -->
+        <!-- Start Content-->
+
+        <div class="container-fluid">
+
+        <!-- start page title -->
+        <div class="row">
+          <div class="col-12">
+            <div class="page-title-box">
+              <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                  <li class="breadcrumb-item active">
+                    管理
+                    <span style="color:#3BAFDA;">　＞　</span>
+                    <a href="500.html">社員一覧
+                    </a>
+                    <span style="color:#3BAFDA;">　＞　</span>
+                    <a href="521.html">社員編集
+                    </a>
+        
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end page title -->
+
+          <!-- ここからメイン -->
+
+          <!-- 見出し+解説 -->
+          <div style="overflow: hidden;">
+            <div class="left" style="float: left;">
+              <h5>社員編集</h5>
+              <h5>※半角カタカナは使用しないでください</h5>
+            </div>
+            <div class="right" style="float: right;"><a target=”blank”
+                href="https://kaigansen.biz/haccp_iso22000/haccp/procedure/procedure_10.php">
+               
+              </a></div>
+          </div>
+          <!-- 見出し+解説終了 -->
+
+
+
+          <!-- 登録 -->
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="header-title">社員登録</h4>
+
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="p-2">
+                        <form class="form-horizontal" role="form">
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="example-password">社員ID</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="example-password" value="">
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="example-password">部署</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" value="">
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="example-password">氏名</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" value="">
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="example-password">氏名カナ</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" value="">
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="example-password">メールアドレス</label>
+                            <div class="col-sm-10">
+                              <input type="email" class="form-control" value="">
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="example-password">パスワード</label>
+                            <div class="col-sm-10">
+                              <input type="password" class="form-control" value="">
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="example-password">パスワード確認</label>
+                            <div class="col-sm-10">
+                              <input type="password" class="form-control" value="">
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">権限</label>
+                            <div class="col-sm-10">
+                              <select class="form-control">
+                                <option>一般</option>
+                                <option>管理者</option>
+                                <option>スーパー管理者</option>
+
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">スターテス</label>
+                            <div class="col-sm-10">
+                              <select class="form-control">
+                                <option>稼働</option>
+                                <option>休職</option>
+                                <option>退職</option>
+
+                              </select>
+                            </div>
+                          </div>
+
+
+
+                          <!-- 追加ボタン -->
+                          <div class="text-center">
+                            <button type="submit" class="btn btn-secondary mr-3"><a href="500.html" class="text-white">キャンセル</a></button>
+                            <button type="submit" class="btn btn-secondary pl-3 pr-3"><a href="522.html" class="text-white">編集</a></button>
+                          </div>
+                          <!-- 追加ボタン -->
+
+                        </form>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- end row -->
+                </div>
+              </div> <!-- end card -->
+            </div><!-- end col -->
+          </div>
+          <!-- 登録終了 -->
+
+
+
+          <!-- メイン終了 -->
+
+
+
+
+          <!-- Footer Start -->
+          <footer class="footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  &copy;
+                  <script>document.write(new Date().getFullYear())</script> Sirius Co.,Ltd.
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- end Footer -->
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+
+      </div>
+      <!-- END wrapper -->
+
+      <!-- Right Sidebar -->
+      <div class="right-bar">
+        <div data-simplebar class="h-100">
+
+          <!-- Nav tabs -->
+
+
+          <!-- Tab panes -->
+          <div class="tab-content pt-0">
+
+            <div class="tab-pane active" id="settings-tab" role="tabpanel">
+              <h6 class="font-weight-medium px-3 m-0 py-2 font-13 text-uppercase bg-light">
+                <span class="d-block py-1">Theme Settings</span>
+              </h6>
+
+              <div class="p-3">
+                <div class="alert alert-warning" role="alert">
+                  <strong>Customize </strong> the overall color scheme, sidebar menu, etc.
+                </div>
+
+                <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Color Scheme</h6>
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="color-scheme-mode" value="light"
+                    id="light-mode-check" checked />
+                  <label class="custom-control-label" for="light-mode-check">Light Mode</label>
+                </div>
+
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="color-scheme-mode" value="dark"
+                    id="dark-mode-check" />
+                  <label class="custom-control-label" for="dark-mode-check">Dark Mode</label>
+                </div>
+
+                <!-- Width -->
+                <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Width</h6>
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="width" value="fluid" id="fluid-check"
+                    checked />
+                  <label class="custom-control-label" for="fluid-check">Fluid</label>
+                </div>
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="width" value="boxed" id="boxed-check" />
+                  <label class="custom-control-label" for="boxed-check">Boxed</label>
+                </div>
+
+                <!-- Topbar -->
+                <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Topbar</h6>
+
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="topbar-color" value="dark"
+                    id="darktopbar-check" checked />
+                  <label class="custom-control-label" for="darktopbar-check">Dark</label>
+                </div>
+
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="topbar-color" value="light"
+                    id="lighttopbar-check" />
+                  <label class="custom-control-label" for="lighttopbar-check">Light</label>
+                </div>
+
+                <!-- Menu positions -->
+                <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Menus Positon <small>(Leftsidebar and
+                    Topbar)</small></h6>
+
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="menus-position" value="fixed" id="fixed-check"
+                    checked />
+                  <label class="custom-control-label" for="fixed-check">Fixed</label>
+                </div>
+
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="menus-position" value="scrollable"
+                    id="scrollable-check" />
+                  <label class="custom-control-label" for="scrollable-check">Scrollable</label>
+                </div>
+
+                <!-- Left Sidebar-->
+                <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Left Sidebar Color</h6>
+
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="leftsidebar-color" value="light"
+                    id="light-check" checked />
+                  <label class="custom-control-label" for="light-check">Light</label>
+                </div>
+
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="leftsidebar-color" value="dark"
+                    id="dark-check" />
+                  <label class="custom-control-label" for="dark-check">Dark</label>
+                </div>
+
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="leftsidebar-color" value="brand"
+                    id="brand-check" />
+                  <label class="custom-control-label" for="brand-check">Brand</label>
+                </div>
+
+                <div class="custom-control custom-switch mb-3">
+                  <input type="radio" class="custom-control-input" name="leftsidebar-color" value="gradient"
+                    id="gradient-check" />
+                  <label class="custom-control-label" for="gradient-check">Gradient</label>
+                </div>
+
+                <!-- size -->
+                <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Left Sidebar Size</h6>
+
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="leftsidebar-size" value="default"
+                    id="default-size-check" checked />
+                  <label class="custom-control-label" for="default-size-check">Default</label>
+                </div>
+
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="leftsidebar-size" value="condensed"
+                    id="condensed-check" />
+                  <label class="custom-control-label" for="condensed-check">Condensed <small>(Extra Small
+                      size)</small></label>
+                </div>
+
+                <div class="custom-control custom-switch mb-1">
+                  <input type="radio" class="custom-control-input" name="leftsidebar-size" value="compact"
+                    id="compact-check" />
+                  <label class="custom-control-label" for="compact-check">Compact <small>(Small size)</small></label>
+                </div>
+
+                <!-- User info -->
+                <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Sidebar User Info</h6>
+
+                <div class="custom-control custom-switch mb-1">
+                  <input type="checkbox" class="custom-control-input" name="leftsidebar-user" value="fixed"
+                    id="sidebaruser-check" />
+                  <label class="custom-control-label" for="sidebaruser-check">Enable</label>
+                </div>
+
+
+                <button class="btn btn-primary btn-block mt-4" id="resetBtn">Reset to Default</button>
+
+                <a href="https://wrapbootstrap.com/theme/minton-admin-dashboard-landing-template-WB0858DB6?ref=coderthemes"
+                  class="btn btn-danger btn-block mt-2" target="_blank"><i class="mdi mdi-basket mr-1"></i> Purchase
+                  Now</a>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div> <!-- end slimscroll-menu-->
+      </div>
+      <!-- /Right-bar -->
+
+      <!-- Right bar overlay-->
+      <div class="rightbar-overlay"></div>
+
+      <!-- デフォルトで日付が入るjs -->
+
+      <script src="./common/js/data.js"></script>
+
+      <!-- Vendor js -->
+      <script src="./assets/js/vendor.min.js"></script>
+
+      <!-- KNOB JS -->
+      <script src="./assets/libs/jquery-knob/jquery.knob.min.js"></script>
+      <!-- Apex js-->
+      <script src="./assets/libs/apexcharts/apexcharts.min.js"></script>
+
+      <!-- Plugins js-->
+      <script src="./assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+      <script src="./assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+
+      <!-- Dashboard init-->
+      <script src="./assets/js/pages/dashboard-sales.init.js"></script>
+
+      <!-- App js -->
+      <script src="./assets/js/app.min.js"></script>
+
+</body>
+
+</html>

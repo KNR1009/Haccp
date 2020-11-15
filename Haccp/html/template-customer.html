@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+  <meta content="Coderthemes" name="author" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+  <!-- plugin css -->
+  <link href="../assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
+  <!-- App css -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+  <link href="../assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+
+  <link href="../assets/css/bootstrap-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" />
+  <link href="../assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" />
+
+  <!-- icons -->
+  <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="loading">
+
+  <!-- Begin page -->
+  <div id="wrapper">
+
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="left-side-menu">
+
+      <!-- LOGO -->
+      <div class="logo-box">
+        <a href="index.html" class="logo logo-dark text-center">
+          <span class="logo-sm">
+            <img src="../assets/images/logo-sm-dark.png" alt="" height="24">
+            <!-- <span class="logo-lg-text-light">Minton</span> -->
+          </span>
+          <span class="logo-lg">
+            <img src="../assets/images/logo-dark.png" alt="" height="20">
+            <!-- <span class="logo-lg-text-light">M</span> -->
+          </span>
+        </a>
+
+        <a href="index.html" class="logo logo-light text-center">
+          <span class="logo-sm">
+            <img src="../assets/images/logo-sm.png" alt="" height="24">
+          </span>
+          <span class="logo-lg">
+            <img src="../assets/images/logo-light.png" alt="" height="20">
+          </span>
+        </a>
+      </div>
+
+      <div class="h-100" data-simplebar>
+
+        <!-- User box -->
+        <div class="user-box text-center">
+          <img src="../assets/images/users/avatar-1.jpg" alt="user-img" title="Mat Helme"
+          class="rounded-circle avatar-md">
+          <div class="dropdown">
+            <a href="javascript: void(0);" class="text-reset dropdown-toggle h5 mt-2 mb-1 d-block"
+            data-toggle="dropdown">Nik Patel</a>
+            <div class="dropdown-menu user-pro-dropdown">
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="fe-user mr-1"></i>
+                <span>My Account</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="fe-settings mr-1"></i>
+                <span>Settings</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="fe-lock mr-1"></i>
+                <span>Lock Screen</span>
+              </a>
+
+              <!-- item-->
+              <a href="javascript:void(0);" class="dropdown-item notify-item">
+                <i class="fe-log-out mr-1"></i>
+                <span>Logout</span>
+              </a>
+
+            </div>
+          </div>
+          <p class="text-reset">Admin Head</p>
+        </div>
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+
+          <ul id="side-menu">
+
+            <li class="menu-title">Navigation</li>
+
+            <li>
+              <a href="#sidebarDashboards" data-toggle="collapse" class="waves-effect">
+                <i class="ri-dashboard-line"></i>
+                <span> ダッシュボード </span>
+              </a>
+
+            </li>
+
+            <li>
+              <a href="#sidebarLayouts" data-toggle="collapse">
+                <!--                                    <i class="ri-layout-line"></i>-->
+                <img src="../assets/images/icons/kanri-icon.svg" style="width:15px;margin-left:3px;margin-right:12px;">
+                <span> 管理 </span>
+                <span class="menu-arrow"></span>
+              </a>
+              <div class="collapse" id="sidebarLayouts">
+                <ul class="nav-second-level">
+                  <li>
+                    <a href="#">項目1</a>
+                  </li>
+                  <li>
+                    <a href="#">項目2</a>
+                  </li>
+                  <li>
+                    <a href="#">項目3</a>
+                  </li>
+
+                </ul>
+              </div>
+            </li>
+
+
+
+            <li>
+              <a href="#sidebarEmail" data-toggle="collapse">
+                <img src="../assets/images/icons/info-icon.svg" style="width:14px;margin-left:3px;margin-right:14px;">
+                <span> 企業情報 </span>
+                <span class="menu-arrow"></span>
+              </a>
+              <div class="collapse" id="sidebarEmail">
+                <ul class="nav-second-level">
+                  <li>
+                    <a href="#">項目a</a>
+                  </li>
+                  <li>
+                    <a href="#">項目b</a>
+                  </li>
+                  <li>
+                    <a href="#">項目c</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="#sidebarTasks" data-toggle="collapse">
+                <img src="../assets/images/icons/kitei-icon.svg" style="width:15px;margin-left:3px;margin-right:14px;">
+                <span> HACCP規定 </span>
+                <span class="menu-arrow"></span>
+              </a>
+              <div class="collapse" id="sidebarTasks">
+                <ul class="nav-second-level">
+                  <li>
+                    <a href="#">手順1:テーマを作ろう</a>
+                  </li>
+                  <li>
+                    <a href="#">手順2:製品説明図を作ろう<br>手順3:用途、対象者を確認しよう</a>
+                  </li>
+                  <li>
+                    <a href="#">手順4:製造工程図を作ろう</a>
+                  </li>
+                  <li>
+                    <a href="#">手順5:製造工程図を現場で確認しよう</a>
+                  </li>
+                  <li>
+                    <a href="#">手順６【原則1】：危害要因の分析に挑戦<br>手順７【原則2】：重要管理点（CCP）をみつける<br>手順８【原則3】：管理基準（CL）の設定<br>手順９【原則4】：モニタリング方法の設定</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+
+            <li>
+              <a href="#sidebarAuth" data-toggle="collapse">
+                <img src="../assets/images/icons/kiroku-icon.svg" style="width:20px;margin-left:3px;margin-right:11px;">
+                <span> HACCP記録 </span>
+                <span class="menu-arrow"></span>
+              </a>
+              <div class="collapse" id="sidebarAuth">
+                <ul class="nav-second-level">
+                  <li>
+                    <a href="auth-login.html">手順１０【原則5】：不具合があった時には「改善措置」</a>
+                  </li>
+				  <li>
+                    <a href="auth-login.html">手順１１【原則6】：定期的に見直す「検証」</a>
+                  </li>
+                  <li>
+                    <a href="auth-login-2.html">手順１２【原則7】：記録の文書化と保管</a>
+                  </li>
+				  <li>
+                    <a href="auth-login-2.html">より良くするために〜検証とは〜</a>
+                  </li>
+
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="clearfix"></div>
+
+      </div>
+      <!-- Sidebar -left -->
+
+    </div>
+    <!-- Left Sidebar End -->
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="content-page">
+      <div class="content">
+
+        <!-- Topbar Start -->
+        <div class="navbar-custom">
+          <div class="container-fluid">
+
+      <ul class="list-unstyled topnav-menu float-right mb-0">
+        <li class="notification-list my-3 user-name">
+          <span class="text-white username-span">
+            中島輝征 様
+          </span>
+          </li>
+      
+        <li class="logout">
+          <button class="logout-button" role="button">ログアウト</button>
+        </li>
+      </ul>
+
+
+
+            <!-- LOGO -->
+            <div class="logo-box">
+              <a href="index.html" class="logo logo-dark text-center">
+                <span class="logo-sm">
+                  <img src="../assets/images/logo-sm-dark.png" alt="" height="24">
+                  <!-- <span class="logo-lg-text-light">Minton</span> -->
+                </span>
+                <span class="logo-lg">
+                  <img src="../assets/images/logo-dark.png" alt="" height="20">
+                  <!-- <span class="logo-lg-text-light">M</span> -->
+                </span>
+              </a>
+
+              <a href="index.html" class="logo logo-light text-center">
+                <span class="logo-sm">
+                  <img src="../assets/images/logo-sm.png" alt="" height="24">
+                </span>
+                <span class="logo-lg">
+                  <img src="../assets/images/logo-light.png" alt="" height="20">
+                </span>
+              </a>
+            </div>
+
+            <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+              <li>
+                <button class="button-menu-mobile waves-effect waves-light">
+                  <i class="fe-menu"></i>
+                </button>
+              </li>
+              <li>
+                <div class="text-white my-sm-3">
+                  株式会社aa　bb事業所　
+                </div>
+              </li>
+
+              <li>
+                <!-- Mobile menu toggle (Horizontal Layout)-->
+                <a class="navbar-toggle nav-link" data-toggle="collapse" data-target="#topnav-menu-content">
+                  <div class="lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <!-- End mobile menu toggle-->
+              </li>
+
+
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <!-- end Topbar -->
+
+        <!-- Start Content-->
+
+        <div class="container-fluid">
+
+          <!-- start page title -->
+          <div class="row">
+            <div class="col-12">
+              <div class="page-title-box">
+                <h4 class="page-title">ダッシュボード</h4>
+                <div class="page-title-right">
+                  <ol class="breadcrumb m-0">
+                    <!--
+                    <li class="breadcrumb-item"><a href="javascript: void(0);"></a></li>
+                    <li class="breadcrumb-item"><a href="javascript: void(0);"></a></li>
+                  -->
+                  <li class="breadcrumb-item active">ダッシュボード</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end page title -->
+
+        <div class="row">
+          <div class="col-xl-8">
+            <div class="card">
+              <div class="card-body">
+
+                <h4 class="header-title mb-3">基本情報</h4>
+
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover table-centered m-0 table-sm">
+
+
+                    <tbody>
+                      <tr>
+                        <td>
+                          <h5 class="m-0 font-weight-normal">企業名</h5>
+                        </td>
+
+                        <td>
+                          株式会社###
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <h5 class="m-0 font-weight-normal">事業所名</h5>
+                        </td>
+
+                        <td>
+                          ###事業所
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <h5 class="m-0 font-weight-normal">事業所コード</h5>
+                        </td>
+
+                        <td>
+                          ######
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <h5 class="m-0 font-weight-normal">登録人数</h5>
+                        </td>
+
+                        <td>
+                          ##人
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <h5 class="m-0 font-weight-normal">商品数</h5>
+                        </td>
+
+                        <td>
+                          ####
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <h5 class="m-0 font-weight-normal">工程数</h5>
+                        </td>
+
+                        <td>
+                          ####
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div> <!-- end .table-responsive-->
+              </div>
+            </div> <!-- end card-->
+          </div> <!-- end col -->
+
+
+        </div><!-- end row -->
+
+        <div class="row">
+          <div class="col-xl-8">
+            <div class="card">
+              <div class="card-body">
+
+
+                <h4 class="header-title mb-3">一覧</h4>
+
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover table-centered m-0 table-sm">
+
+
+                    <tbody>
+                      <tr>
+                        <td rowspan="11">
+                          <h5 class="m-0 font-weight-normal">HACCP規定</h5>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+                        <td>
+                          手順1：チームを作ろう
+                        </td>
+
+                        <td>
+                          完了
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          手順2：製品説明図を作ろう
+                        </td>
+
+                        <td>
+                          完了
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          手順3：用途、対象者を確認しよう
+                        </td>
+
+                        <td>
+                          完了
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          手順4：製造工程図を作ろう
+                        </td>
+
+                        <td>
+                          完了
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          手順5：製造工程図を現場で確認しよう
+                        </td>
+
+                        <td>
+                          完了
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          手順６【原則1】：危害要因の分析に挑戦
+                        </td>
+
+                        <td>
+                          完了
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          手順７【原則2】：重要管理点（CCP）をみつける
+                        </td>
+
+                        <td>
+                          完了
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          手順８【原則3】：管理基準（CL）の設定
+                        </td>
+
+                        <td>
+                          完了
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          手順９【原則4】：モニタリング方法の設定
+                        </td>
+
+                        <td>
+                          完了
+                        </td>
+						  
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+						
+					  <tr>
+                        <td>
+                          手順１１【原則6】：定期的に見直す「検証」
+                        </td>
+
+                        <td>
+                          完了
+                        </td>
+						  
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+                      </tr>
+
+
+                      <tr>
+                        <td rowspan="3">
+                          <h5 class="m-0 font-weight-normal">HACCP記録</h5>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          手順１０【原則5】：不具合があった時には「改善措置」
+                        </td>
+
+                        <td>
+                          完了
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+                        <td>
+                          手順１２【原則7】：記録の文書化と保管
+                        </td>
+
+                        <td>
+                          完了
+                        </td>
+
+                        <td>
+                          <a href="javascript: void(0);" class="btn btn-xs btn-secondary"><i class="mdi mdi-pencil"></i></a>
+                        </td>
+
+                      </tr>
+
+
+
+
+
+                    </tbody>
+                  </table>
+                </div> <!-- end .table-responsive-->
+              </div>
+            </div> <!-- end card-->
+          </div> <!-- end col -->
+
+
+        </div><!-- end row -->
+
+
+
+
+        <!-- Footer Start -->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <script>document.write(new Date().getFullYear())</script> &copy; Minton theme by <a href="">Coderthemes</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- end Footer -->
+
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- End Page content -->
+      <!-- ============================================================== -->
+
+
+    </div>
+    <!-- END wrapper -->
+
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+      <div data-simplebar class="h-100">
+
+        <!-- Nav tabs -->
+
+
+        <!-- Tab panes -->
+        <div class="tab-content pt-0">
+
+          <div class="tab-pane active" id="settings-tab" role="tabpanel">
+            <h6 class="font-weight-medium px-3 m-0 py-2 font-13 text-uppercase bg-light">
+              <span class="d-block py-1">Theme Settings</span>
+            </h6>
+
+            <div class="p-3">
+              <div class="alert alert-warning" role="alert">
+                <strong>Customize </strong> the overall color scheme, sidebar menu, etc.
+              </div>
+
+              <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Color Scheme</h6>
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="color-scheme-mode" value="light"
+                id="light-mode-check" checked />
+                <label class="custom-control-label" for="light-mode-check">Light Mode</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="color-scheme-mode" value="dark"
+                id="dark-mode-check" />
+                <label class="custom-control-label" for="dark-mode-check">Dark Mode</label>
+              </div>
+
+              <!-- Width -->
+              <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Width</h6>
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="width" value="fluid" id="fluid-check" checked />
+                <label class="custom-control-label" for="fluid-check">Fluid</label>
+              </div>
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="width" value="boxed" id="boxed-check" />
+                <label class="custom-control-label" for="boxed-check">Boxed</label>
+              </div>
+
+              <!-- Topbar -->
+              <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Topbar</h6>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="topbar-color" value="dark" id="darktopbar-check"
+                checked />
+                <label class="custom-control-label" for="darktopbar-check">Dark</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="topbar-color" value="light" id="lighttopbar-check" />
+                <label class="custom-control-label" for="lighttopbar-check">Light</label>
+              </div>
+
+              <!-- Menu positions -->
+              <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Menus Positon <small>(Leftsidebar and Topbar)</small></h6>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="menus-position" value="fixed" id="fixed-check"
+                checked />
+                <label class="custom-control-label" for="fixed-check">Fixed</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="menus-position" value="scrollable"
+                id="scrollable-check" />
+                <label class="custom-control-label" for="scrollable-check">Scrollable</label>
+              </div>
+
+              <!-- Left Sidebar-->
+              <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Left Sidebar Color</h6>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="leftsidebar-color" value="light" id="light-check" checked />
+                <label class="custom-control-label" for="light-check">Light</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="leftsidebar-color" value="dark" id="dark-check" />
+                <label class="custom-control-label" for="dark-check">Dark</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="leftsidebar-color" value="brand" id="brand-check" />
+                <label class="custom-control-label" for="brand-check">Brand</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-3">
+                <input type="radio" class="custom-control-input" name="leftsidebar-color" value="gradient" id="gradient-check" />
+                <label class="custom-control-label" for="gradient-check">Gradient</label>
+              </div>
+
+              <!-- size -->
+              <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Left Sidebar Size</h6>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="leftsidebar-size" value="default"
+                id="default-size-check" checked />
+                <label class="custom-control-label" for="default-size-check">Default</label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="leftsidebar-size" value="condensed"
+                id="condensed-check" />
+                <label class="custom-control-label" for="condensed-check">Condensed <small>(Extra Small size)</small></label>
+              </div>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="radio" class="custom-control-input" name="leftsidebar-size" value="compact"
+                id="compact-check" />
+                <label class="custom-control-label" for="compact-check">Compact <small>(Small size)</small></label>
+              </div>
+
+              <!-- User info -->
+              <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Sidebar User Info</h6>
+
+              <div class="custom-control custom-switch mb-1">
+                <input type="checkbox" class="custom-control-input" name="leftsidebar-user" value="fixed" id="sidebaruser-check" />
+                <label class="custom-control-label" for="sidebaruser-check">Enable</label>
+              </div>
+
+
+              <button class="btn btn-primary btn-block mt-4" id="resetBtn">Reset to Default</button>
+
+              <a href="https://wrapbootstrap.com/theme/minton-admin-dashboard-landing-template-WB0858DB6?ref=coderthemes"
+              class="btn btn-danger btn-block mt-2" target="_blank"><i class="mdi mdi-basket mr-1"></i> Purchase Now</a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div> <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- Vendor js -->
+    <script src="../assets/js/vendor.min.js"></script>
+
+    <!-- KNOB JS -->
+    <script src="../assets/libs/jquery-knob/jquery.knob.min.js"></script>
+    <!-- Apex js-->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Plugins js-->
+    <script src="../assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="../assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+
+    <!-- Dashboard init-->
+    <script src="../assets/js/pages/dashboard-sales.init.js"></script>
+
+    <!-- App js -->
+    <script src="../assets/js/app.min.js"></script>
+
+  </body>
+  </html>

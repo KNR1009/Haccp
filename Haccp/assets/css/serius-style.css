@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+
+a {
+	color:#FD9A28;
+	text-decoration:none;
+	background-color:transparent
+}.logo-box {
+    height: 70px;
+    width: 240px;
+    transition: all .1s ease-out;
+    background-color: #FD9A28;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.btn-primary{
+	background-color:#FD9A28;
+	border-color:#FD9A28;
+}
+
+a :hover{
+	color:#FF872F !important;
+	text-decoration:none;
+}
+
+.btn-primary:hover{
+	background-color:#FF872F !important;
+	background:#FF872F !important;
+	border-color:#FD9A28;
+}
+
+#side-menu ul :hover{
+	 color: #FF872F !important;
+}
+
+#side-menu li :hover{
+	 color: #FF872F !important;
+}
+
+#sidebar-menu>ul>li>a:focus{
+	color:#FF872F;
+}
+
+#sidebar-menu>ul>li>a:active{
+	color:#FF872F;
+}
+
+#sidebar-menu>ul>li>a:focus{
+	color:#FF872F;
+}
